@@ -40,7 +40,7 @@ fun LoginButton(
                 Toast.makeText(
                     context, "Username: $username\nPassword: $password", Toast.LENGTH_SHORT
                 ).show()
-                viewModel.login(username,password)
+                viewModel.newsList()
             }
         },
 

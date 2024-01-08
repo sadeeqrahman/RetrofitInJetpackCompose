@@ -1,5 +1,6 @@
 package com.sadeeq.encoders.retrofitinjetpackcompose.apis
 
+import com.sadeeq.encoders.retrofitinjetpackcompose.models.NewsResponse
 import com.sadeeq.encoders.retrofitinjetpackcompose.models.UserResponse
 import retrofit2.Response
 import retrofit2.http.Field
@@ -15,5 +16,9 @@ interface ApiService {
         @Field("password") password: String
     ): UserResponse
 
+
+    @GET("/NewsAPI/sources.json")
+    suspend fun newsList(
+    ): NewsResponse
 
 }
