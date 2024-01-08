@@ -37,7 +37,7 @@ fun LoginScreen(viewModel: MyViewModel = hiltViewModel()) {
                 ) {
 
                     items(tokenResponse.sources!!.size) { index ->
-                       Text(text = tokenResponse.sources!![index]!!.description!!)
+                        Text(text = tokenResponse.sources!![index]!!.description!!)
                     }
 
                 }
