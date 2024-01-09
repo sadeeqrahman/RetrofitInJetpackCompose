@@ -6,11 +6,10 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.sadeeq.encoders.retrofitinjetpackcompose.screen.LoginScreen
+import com.sadeeq.encoders.retrofitinjetpackcompose.screen.NewsScreen
 import com.sadeeq.encoders.retrofitinjetpackcompose.ui.theme.RetrofitInJetpackComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -25,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    LoginScreen()
+                    NewsScreen()
                 }
             }
         }
@@ -38,6 +37,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun GreetingPreview() {
     RetrofitInJetpackComposeTheme {
-        LoginScreen()
+        NewsScreen()
     }
 }
